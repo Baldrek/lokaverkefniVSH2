@@ -1,0 +1,279 @@
+
+
+
+body {
+	color: #FFFFFF;
+	background-color: #4F51FF;
+	width: 100%;
+
+}
+
+section {
+	padding-left: 1em;
+}
+
+/*===========FELLILISTAR M. INNIHALDI=========*/
+ 
+h3 {
+	display: inline-block;
+	font-size: 1em;
+}
+
+ input {
+    display: none;
+  }
+
+
+  label {
+    position: relative;
+    border: 6px double #999;
+    border-radius: 20%;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2em;
+    text-align: center;
+    padding: .2em .4em;
+    transition: all .1s ease;
+    background-color: #eee;
+  }
+
+  input:checked + label {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #4F51FF;
+  transition: all .4s ease;
+}
+
+
+.fall {
+	display: inline-block;
+	min-width: 80%;
+	overflow: hidden;
+	max-height: 0;
+	padding-bottom: 0;
+	/*display: none;*/
+	border-bottom: 2px solid #eee;
+	transition: all 1s ease;
+	
+}
+
+
+#umh:checked ~ .umh{	 /*Skoða að bæta þessu við hina*/
+ 	max-height: 500px;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
+ 	
+ }
+ #afkg:checked ~ .afkg{
+ 	max-height: 500px;
+ 	transition: all 1s ease;
+ }
+ #timas:checked ~ .timas{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+ #adstad:checked ~ .adstad{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+ #skra:checked ~ .skra{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+ #motsm:checked ~ .motsm{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+ #veitng:checked ~ .veitng{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+ #contact:checked ~ .contact{
+ 	max-height: 500px;
+ 	transition: all .35s ease;
+ }
+
+/*================BANNER USAH============*/
+
+.banner {
+	font-family: "Britannic Bold", "Times New Roman", Courier, Arial;
+	font-size: .5em;
+	letter-spacing: .1em;
+	padding-left: 8%;
+	padding-right: 0;
+	padding-top: 0;
+	background-color: #0D6CFD;
+	display: inline-block;
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 5%;
+	height: 100%;
+}
+
+img {
+	width: 4.5em;
+	height: 5.5em;
+	margin-right: 8%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	display: inline-block;
+	float: left;
+	position: relative;
+}
+
+.bannermynd {
+	display: inline-block;
+	float: right;
+	position: absolute;
+	height: 100%;
+	width: 80%;
+	top: 0;
+	right: 0;
+	margin-top: 0;
+}
+
+.bani {
+	position: absolute;
+	width: 25%;
+	height: 100%;
+	overflow: hidden;
+	margin-right: 0;
+	margin-bottom: 0;
+
+}
+
+/*.bannermynd figure {
+	opacity: 0;
+}*/
+
+.fr1 {
+right: 0;
+top: 0;
+margin-top: 0;
+}
+
+.fr2 {
+margin-top: 0;
+right: 0;
+top: 0;
+}
+
+.fr3 {
+margin-top: 0;
+right: 0;
+top: 0;
+}
+
+.fr4 {
+margin-top: 0;
+right: 0;
+top: 0;
+}
+
+.fr5 {
+margin-top: 0;
+right: 0;
+top: 0;
+}
+
+.fr6 {
+margin-top: 0;
+right: 0;
+top: 0;
+}
+
+/*======BANNER ANIMATION SLIDESHOW=======*/
+
+figure:nth-child(1) {
+	-webkit- animation: xfade 72s 60s infinite;
+	-moz- animation: xfade 72s 60s infinite;
+	-ms- animation: xfade 72s 60s infinite;
+	-o- animation: xfade 72s 60s infinite;
+	animation: xfade 72s 60s infinite;
+}
+figure:nth-child(2) {
+	-webkit- animation: xfade 72s 48s infinite;
+	-moz- animation: xfade 72s 48s infinite;
+	-ms- animation: xfade 72s 48s infinite;
+	-o- animation: xfade 72s 48s infinite;
+	animation: xfade 72s 48s infinite;
+}
+figure:nth-child(3) {
+	-webkit- animation: xfade 72s 36s infinite;
+	-moz- animation: xfade 72s 36s infinite;
+	-ms- animation: xfade 72s 36s infinite;
+	-o- animation: xfade 72s 36s infinite;
+	animation: xfade 72s 36s infinite;
+}
+figure:nth-child(4) {
+	-webkit- animation: xfade 72s 24s infinite;
+	-moz- animation: xfade 72s 24s infinite;
+	-ms- animation: xfade 72s 24s infinite;
+	-o- animation: xfade 72s 24s infinite;
+	animation: xfade 72s 24s infinite;
+}
+figure:nth-child(5) {
+	-webkit- animation: xfade 72s 12s infinite;
+	-moz- animation: xfade 72s 12s infinite;
+	-ms- animation: xfade 72s 12s infinite;
+	-o- animation: xfade 72s 12s infinite;
+	animation: xfade 72s 12s infinite;
+}
+figure:nth-child(6) {
+	-webkit- animation: xfade 72s 0s infinite;
+	-moz- animation: xfade 72s 0s infinite;
+	-ms- animation: xfade 72s 0s infinite;
+	-o- animation: xfade 72s 0s infinite;
+	animation: xfade 72s 0s infinite;
+}
+
+@keyframes xfade{
+
+	0%{
+		opacity: 1;
+	}
+	10.5%{
+		opacity: 1;
+	}
+	16.66%{
+		opacity: 0;
+	}
+	90%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.5em;
+	padding: 5%;
+	margin: 5%;
+}
+
+
+header {
+
+	display: block;
+	position: relative;
+	text-align: center;
+}
+
+/*=============MEDIA BREAKPOINTS 30-48-60 em===============*/
+
+@media screen and (min-width: 30em) {
+
+}
+
+@media screen and (min-width: 48em) {
+
+}
+
+@media screen and (min-width: 60em) {
+
+}
