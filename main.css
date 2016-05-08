@@ -5,19 +5,36 @@
 }
 
 
-
 body {
 	color: #FFFFFF;
 	background-color: #AFBAFF;    /* #4F51FF */
 	max-width: 1000px;
 	margin: 0 auto;
+	padding-bottom: 0;
 }
 
 section {
 	background-color: #AFBAFF;
-	padding-left: 1em;
+	padding-left: .5em;
 
 }
+
+/*==============TAFLA============*/
+
+table{
+	border: 3px solid #cdcfaa;
+	border-collapse: collapse;
+	font-size: .5em;
+	background-color: #CEEBCC;
+}
+
+th,
+td {
+	color: #0F1522;
+	border: 1px solid #cecfd5;
+	padding: 3px 5px;
+}
+
 
 /*=========button - skraning  ==========*/
 
@@ -57,10 +74,29 @@ section {
 	transition: all 1s;
 }
 
-
-
-
 /*========SKRNINGAR-FORM=============*/
+
+
+
+.grein {
+	display: inline-block;
+	max-width: 40%;
+	padding: .5em;
+	margin: 4px;
+	background-color: #F0F0FF;
+	box-shadow: 0px 0px 20px #F0F0FF;
+}
+
+input:checked + .grein{
+	box-shadow: 4px 4px 4px #F0F0FF;
+}/*SKOÐA BETUR EF TÍMI ER TIL*/
+
+.skraning {
+	display: inline-block;
+	display: visible;
+	margin-right: .5em;
+	margin-left: 1em;
+}
 
 section#loginBox {
 	color: #9A97FF;
@@ -68,9 +104,9 @@ section#loginBox {
 	border: 1px solid rgba(0, 0, 0, .15);
 	border-radius: 4px;
 	box-shadow: 0 1px 0 rgba(255,255,255, 0.2) inset, 0 0 4px rgba(0,0,0,0.2);
-	margin: 10px auto; /*aligns center*/
-	padding: 10px;
-	width: 250px;
+	margin: 40px auto; /*aligns center*/
+	padding: 24px;
+	width: 500px;
 
 }
 
@@ -118,6 +154,8 @@ form.minimal select:focus {
 	color: rgb(0,0,0);
 }
 
+/*-----------------------*/
+
 footer {
 	
 	width: 105%;
@@ -149,7 +187,7 @@ aside {
 	height:20%;
 	margin-top: 5px;
 	margin-right: 5px;
-	margin-bottom: 15px;
+	margin-bottom: 0;
 	margin-left: 15%;
 }
 
@@ -172,7 +210,8 @@ aside {
 }
 
 .innipuki {
-	width: 75%;
+	width: 250px;
+	display: block;
 }
 
 /*
@@ -197,7 +236,7 @@ ul {
 	list-style: none;
 }
 
-.nidri {
+#toggle {
 	display: none;
 }
 
@@ -307,8 +346,15 @@ h3 {
   .nidri:checked + .nedra {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
   color: #4F51FF;
+  	border-radius: 50%;
+	transform: rotate(-55deg);
+
   transition: all .4s ease;
 }
+
+.nedra:active {
+	box-shadow: inset 0 0 0 12px #888;
+	}
 
 
 .fall {
@@ -333,7 +379,7 @@ h3 {
  	
  }
  #afkg:checked ~ .afkg{
- 	max-height: 500px;
+ 	max-height: 900px;
  	transition: all 1s ease;
  }
  #timas:checked ~ .timas{
@@ -462,6 +508,28 @@ top: 0;
 
 }
 
+/*=============heradsmotsmyndir============*/
+
+.heradsmyndir {
+	position: relative;
+	display: block;
+	width: 450px;
+	height: 450px;
+	border: solid 3px green;
+}
+
+.banani {
+	position: absolute;
+	width: 30%;
+	overflow: hidden;
+	margin: 30px auto;
+}
+
+.fx1 {
+	margin-top: 0;
+	right: 0;
+	top: 0;
+}
 /*======BANNER ANIMATION SLIDESHOW=======*/
 
 figure:nth-child(1) {
@@ -582,6 +650,14 @@ max-width: 95%;
 }
 
 
+/*==============TAFLA============*/
+
+table{
+	font-size: .7em;
+}
+
+
+
 /*================BANNER=============*/
 
 .banner {
@@ -645,18 +721,30 @@ max-width: 700px;
 	border: solid 2px blue;
 }
 
-section#loginBox {
-	margin: 40px auto; /*aligns center*/
-	padding: 24px;
-	width: 400px;
+
+/*==============TAFLA============*/
+
+table{
+	font-size: .8em;
 }
+
+th,
+td {
+	padding: 4px 6px;
+}
+
+/*================*/
 
 header {
-	position: relative;
-	display: inline-block;
-	margin: 0 auto;
 
+	display: block;
+	position: relative;
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	margin-top: 20%;
 }
+
 
 .banner {
 	height: 9em;
@@ -693,9 +781,7 @@ ul {
 	list-style: none;
 }
 
-.nidri {
-	display: none;
-}
+
 
 
 /*FELA CHECKBOX OG LABEL*/
@@ -733,6 +819,8 @@ ul {
 	height: 2em;
 
 }
+
+
 
 nav .menubar {
 	padding: 0;
@@ -793,10 +881,13 @@ border: solid 5px blue;
 	margin: 0 auto;
 }
 
-section#loginBox {
-	margin: 40px auto; /*aligns center*/
-	padding: 24px;
-	width: 500px;
+table{
+	font-size: .9em;
+}
+
+th,
+td {
+	padding: 5px 8px;
 }
 
 
