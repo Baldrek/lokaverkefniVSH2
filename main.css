@@ -35,6 +35,29 @@ section {
 
 }
 
+.heradsmot {
+	width: 90%;
+	height: ;
+	box-shadow: -3px -3px 5px 5px #858DC2; 
+	display: block;
+	margin-right: 50px;
+}
+
+figcaption {
+	font-size: 0.8em;
+	text-shadow: -3px -3px 5px #858DC2;
+	margin-bottom: 20px;
+	vertical-align: bottom;
+}
+
+.thorleifur {
+	margin-left: 10px;
+	margin-right:20%;
+	margin-top: 15px;
+	margin-bottom: 0;
+
+}
+
 aside a:hover { /*=til ad redda staekkun vegna section a hover=========*/
 	font-size: 1em;
 }
@@ -46,7 +69,7 @@ section p {
 
 .facebookdeil {
 	position: fixed;
-	top: 1%;
+	top: 0px;
 	left: 5%;
 }
 
@@ -84,13 +107,14 @@ table{
 	border-collapse: collapse;
 	font-size: .5em;
 	background-color: #CEEBCC;
+	margin-left: 0;
 }
 
 th,
 td {
 	color: #0F1522;
 	border: 1px solid #cecfd5;
-	padding: 3px 5px;
+	padding: 1px 2px;
 }
 
 
@@ -430,7 +454,7 @@ h3 {
 
 
 #umh:checked ~ .umh{	 /*Skoða að bæta þessu við hina*/
- 	max-height: 500px;
+ 	max-height: 900px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
@@ -438,35 +462,35 @@ h3 {
  	
  }
  #afkg:checked ~ .afkg{
- 	max-height: 900px;
- 	padding-left: 1em;
+ 	max-height: 1600px;
+ 	padding-left: 0;
  	padding-bottom: 2em;
  	line-height: 1.3em;
  	transition: all 1s ease;
  }
  #timas:checked ~ .timas{
- 	max-height: 1000px;
+ 	max-height: 1500px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
  	transition: all 1s ease;
  }
  #adstad:checked ~ .adstad{
- 	max-height: 500px;
+ 	max-height: 1500px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
  	transition: all 1s ease;
  }
  #skra:checked ~ .skra{
- 	max-height: 500px;
+ 	max-height: 1200px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
  	transition: all 1s ease;
  }
  #motsm:checked ~ .motsm{
- 	max-height: 1100px;
+ 	max-height: 2500px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
@@ -480,7 +504,7 @@ h3 {
  	transition: all 1s ease;
  }
  #contact:checked ~ .contact{
- 	max-height: 500px;
+ 	max-height: 1100px;
  	padding-left: 2.5em;
  	padding-bottom: 2em;
  	line-height: 1.3em;
@@ -591,42 +615,42 @@ top: 0;
 
 /*======BANNER ANIMATION SLIDESHOW=======*/
 
-figure:nth-child(1) {
+.flettispjald:nth-child(1) {
 	-webkit- animation: xfade 72s 60s infinite;
 	-moz- animation: xfade 72s 60s infinite;
 	-ms- animation: xfade 72s 60s infinite;
 	-o- animation: xfade 72s 60s infinite;
 	animation: xfade 72s 60s infinite;
 }
-figure:nth-child(2) {
+.flettispjald:nth-child(2) {
 	-webkit- animation: xfade 72s 48s infinite;
 	-moz- animation: xfade 72s 48s infinite;
 	-ms- animation: xfade 72s 48s infinite;
 	-o- animation: xfade 72s 48s infinite;
 	animation: xfade 72s 48s infinite;
 }
-figure:nth-child(3) {
+.flettispjald:nth-child(3) {
 	-webkit- animation: xfade 72s 36s infinite;
 	-moz- animation: xfade 72s 36s infinite;
 	-ms- animation: xfade 72s 36s infinite;
 	-o- animation: xfade 72s 36s infinite;
 	animation: xfade 72s 36s infinite;
 }
-figure:nth-child(4) {
+.flettispjald:nth-child(4) {
 	-webkit- animation: xfade 72s 24s infinite;
 	-moz- animation: xfade 72s 24s infinite;
 	-ms- animation: xfade 72s 24s infinite;
 	-o- animation: xfade 72s 24s infinite;
 	animation: xfade 72s 24s infinite;
 }
-figure:nth-child(5) {
+.flettispjald:nth-child(5) {
 	-webkit- animation: xfade 72s 12s infinite;
 	-moz- animation: xfade 72s 12s infinite;
 	-ms- animation: xfade 72s 12s infinite;
 	-o- animation: xfade 72s 12s infinite;
 	animation: xfade 72s 12s infinite;
 }
-figure:nth-child(6) {
+.flettispjald:nth-child(6) {
 	-webkit- animation: xfade 72s 0s infinite;
 	-moz- animation: xfade 72s 0s infinite;
 	-ms- animation: xfade 72s 0s infinite;
@@ -745,7 +769,6 @@ table{
 
 img {
 	width: 5em;
-	height: 6em;
 	margin-right: 8%;
 	margin-top: 3%;
 	margin-bottom: .2%;
@@ -836,7 +859,7 @@ header {
 
 img {
 	width: 5.8em;
-	height: 7.5em;
+	
 	margin-right: 8%;
 	margin-top: 2%;
 	margin-bottom: .2%;
@@ -1004,7 +1027,7 @@ nav .menubar {
 }
 img {
 	width: 5em;
-	height: 6em;
+	
 	margin-right: 8%;
 	margin-top: 1%;
 	margin-bottom: .2%;
