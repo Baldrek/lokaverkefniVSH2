@@ -1,8 +1,5 @@
 
 
-.mobile {
-	color: green;
-}
 
 
 body {
@@ -31,8 +28,6 @@ section a:hover {
 section {
 	background-color: #AFBAFF;
 	padding-left: .5em;
-	
-
 }
 
 .heradsmot {
@@ -73,7 +68,10 @@ section p {
 	left: 5%;
 }
 
-
+.facts {
+	text-transform:uppercase;
+	font-size: .6em; 
+}
 
 /*============timasedill========*/
 
@@ -161,7 +159,7 @@ td {
 
 
 .grein {
-	display: inline-block;
+	display: block;
 	max-width: 40%;
 	padding: .5em;
 	margin: 4px;
@@ -174,7 +172,7 @@ input:checked + .grein{
 }/*SKOÐA BETUR EF TÍMI ER TIL*/
 
 .skraning {
-	display: inline-block;
+	display: block;
 	display: visible;
 	margin-right: .5em;
 	margin-left: 1em;
@@ -186,9 +184,9 @@ section#loginBox {
 	border: 1px solid rgba(0, 0, 0, .15);
 	border-radius: 4px;
 	box-shadow: 0 1px 0 rgba(255,255,255, 0.2) inset, 0 0 4px rgba(0,0,0,0.2);
-	margin: 40px auto; /*aligns center*/
-	padding: 24px;
-	width: 500px;
+	margin: 0 auto; /*aligns center*/
+	padding: 16px;
+	width: 300px;
 
 }
 
@@ -285,6 +283,7 @@ aside {
 	float: left;
 	margin-left: 8px;
 	margin-right: 3px;
+	margin-bottom: 4px;
 	width: 40%;
 	
 	box-shadow: 2px 2px 2px #0D6CFD;
@@ -409,6 +408,7 @@ h3 {
 
  .nidri {
     display: none;
+    transition: all 1s ease;
   }
 
 
@@ -701,9 +701,89 @@ header {
 
 @media screen and (min-width: 30em) {
 
-.mobile {
-	color: yellow;
+
+/*========SKRNINGAR-FORM=============*/
+
+
+
+.grein {
+	display: inline-block;
+	max-width: 40%;
+	padding: .5em;
+	margin: 4px;
+	background-color: #F0F0FF;
+	box-shadow: 0px 0px 20px #F0F0FF;
 }
+
+input:checked + .grein{
+	box-shadow: 4px 4px 4px #F0F0FF;
+}/*SKOÐA BETUR EF TÍMI ER TIL*/
+
+.skraning {
+	display: inline-block;
+	display: visible;
+	margin-right: .5em;
+	margin-left: 1em;
+}
+
+section#loginBox {
+	color: #9A97FF;
+	background-color: rgb(255,255,255);
+	border: 1px solid rgba(0, 0, 0, .15);
+	border-radius: 4px;
+	box-shadow: 0 1px 0 rgba(255,255,255, 0.2) inset, 0 0 4px rgba(0,0,0,0.2);
+	margin: 40px auto; /*aligns center*/
+	padding: 24px;
+	width: 500px;
+
+}
+
+form.minimal label {
+	display: block;
+	margin: 6px 0;
+}
+
+form.minimal input[type="text"],
+form.minimal input[type="email"],
+form.minimal input[type="number"],
+form.minimal input[type="search"],
+form.minimal input[type="aldur"],
+form.minimal textarea {
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(186,186,186);
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.08);
+	display: block;
+	font-size: 14px;
+	margin: 6px 0 12px 0;
+	padding: 8px;
+	text-shadow: 0 1px 1px rgba(255,255,255, 1);
+	width: 90%;
+
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s linear;
+	-o-transition: all 0.1s linear;
+	transition: all 0.1s linear;
+}
+
+form.minimal input[type="text"]:focus,
+form.minimal input[type="email"]:focus,
+form.minimal input[type="number"]:focus,
+form.minimal input[type="search"]:focus,
+form.minimal input[type="aldur"]:focus,
+form.minimal textarea:focus,
+form.minimal select:focus {
+	border-color: #4195fc;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 8px #4195fc;
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 8px #4195fc;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.1), 0 0 8px #4195fc;
+	color: rgb(0,0,0);
+}
+
+/*-----------------------*/
+
 
 /*==========EFRI HNAPPUR OG SLIDE-MENU==========*/
  
@@ -797,9 +877,7 @@ img {
 
 @media screen and (min-width: 48em) {
 
-.mobile {
-	color: red;
-}
+
 
 body {
 max-width: 700px;
@@ -963,14 +1041,11 @@ footer {
 
 @media screen and (min-width: 60em) {
 
-.mobile {
-	color: blue;
-}
+
 
 body {
 
 max-width: 950px;
-border: solid 5px blue;
 	margin: 0 auto;
 }
 
