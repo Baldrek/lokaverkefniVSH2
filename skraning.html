@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="is">
+	<head>
+		<!--   <link href='https://fonts.googleapis.com/css?family=Vidaloka' rel='stylesheet' type='text/css'>           -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="myndir/USAHicon64.png" type="image/x-icon">
+		<title>Verkefni 7</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+
+	<body>
+		<div class="banner">
+		<img class="toplogo" src="myndir/logo_usah_top2.jpg" alt="Merki USAH">
+		<h1>Ungmennasamband<br> Austur-Húnvetninga</h1>
+
+	<div class="bannermynd">
+		
+		<figure>
+			<img class="bani fr1" src="myndir/Gfrjalsar1.jpg" alt="Kúluvarp stúlkna á héraðsmóti">
+		</figure>
+		<figure>
+			<img class="bani fr2" src="myndir/Gfrjalsar2.jpg" alt="Beðið í röð í langstökki stúlkna">
+		</figure>
+			<figure>
+				<img class="bani fr3" src="myndir/Gfrjalsar3.jpg" alt="Gaman á hrífunni í langstökkinu">
+			</figure>
+			<figure>
+				<img class="bani fr4" src="myndir/Gfrjalsar4.jpg" alt="Ungur Húnvetningur í langstökki">
+			</figure>
+			<figure>
+				<img class="bani fr5" src="myndir/Gfrjalsar5.jpg" alt="Keppnin getur verið hörð hjá unga fólkinu">
+			</figure>
+			<figure>
+				<img class="bani fr6" src="myndir/Gfrjalsar6.jpg" alt="Í lok keppni er gott að setjast niður og njóta góðra veitinga">
+			</figure>
+		</div>
+		</div>
+		<header>
+			<h4>Skráningarsíða Héraðsmóts USAH</h4>
+			<p>Hérna er hægt að skrá sig til þáttöku á héraðsmóti USAH bæði til keppni og starfa.</p>
+		</header>
+		<section id="loginBox">
+			<form action="skraning.php" method="get" class="minimal">
+				<h4>ÞÁTTÖKUSKRÁNING</H4>
+				<label for="fullname">
+				Fullt nafn:
+				<input type="text" name="fullname" id="fullname" placeholder="Jón Jónsson" pattern="^([ \u00c0-\u01ffa-zA-Z'\-])+$" required="required" />
+			</label>
+
+			<label for="aldur">
+				Fæðingarár (4 tölustafir):
+				<input type="text" name="aldur" id="aldur" placeholder="1995" pattern="(19[23456789]\d|20[01]\d)" required="required" />
+			</label>
+			
+			<label for="simi">
+				Sími (xxx-xxxx):
+				<input type="text" name="simi" id="simi" placeholder="555-5555" pattern="(\d{3}[\-]\d{4}" required="required" />
+			</label>
+
+			<label for="emil">
+				Email:
+				<input type="email" name="emil" id="emil" placeholder="hamar@stedji.is" pattern="(\d{3}[\-]\d{4}" required="required" />
+			</label>
+		
+	<div class="greinar-skraning">
+		<h4>Greinar</h4>
+		<p>Veljið greinar sem keppa á í</p>
+		<h5>Hlaupagreinar</h5>
+
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="100m" value="100m"> 100 m</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="100mGR" value="100mGR"> 100 m grind</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="200m" value="200m"> 200 m</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="400m" value="400m"> 400 m</label>
+ 	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="800m" value="800m"> 800 m</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="1500m" value="1500m"> 1500 m</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="3000m" value="3000m"> 3000 m</label>
+	</div>
+		<h5>Stökkgreinar</h5>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="hastokk" value="hastokk"> Hástökk</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="langstokk" value="langstokk"> Langstökk</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="stangarstokk" value="stangarstokk"> Stangarstökk</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="tristokk" value="tristokk"> Þrístökk</label>
+	</div>
+		<h5>Kastgreinar</h5>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="kuluvarp" value="kuluvarp"> Kúluvarp</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="kringlukast" value="kringlukast"> Kringlukast</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="spjotkast" value="spjotkast"> Spjótkast</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="sleggjukast" value="sleggjukast"> Sleggjukast</label>
+	</div>
+		<h5>Verkgreinar</h5>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="ponnukokur" value="ponnukokur"> Pönnukökubakstur</label>
+	</div>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="hjolborur" value="hjolborur"> Hjólböruþraut</label>
+	</div>
+	<h5>Sjálfboðaliði</h5>
+	<p>Sjálfboðaliðar hakið í hér:</p>
+	<div class="grein">
+		<label><input class="skraning" type="checkbox" name="sjalfbodalidi" value="sjalfbodalidi"> Sjálfboðaliði</label>
+	</div>
+	</div>
+	<button type="submit" class="btn-minimal">Skrá</button>
+	</form>
+		</section>
+	</body>
