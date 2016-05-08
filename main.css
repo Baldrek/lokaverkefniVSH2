@@ -19,6 +19,31 @@ section {
 
 }
 
+/*============timasedill========*/
+
+
+h6 {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	position: relative;
+	display: block;
+}
+
+.sedill {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 20px;
+}
+
+.container {
+	display: block;
+	width:90%;
+}
+
+
 /*==============TAFLA============*/
 
 table{
@@ -380,31 +405,52 @@ h3 {
  }
  #afkg:checked ~ .afkg{
  	max-height: 900px;
+ 	padding-left: 1em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
  	transition: all 1s ease;
  }
  #timas:checked ~ .timas{
- 	max-height: 500px;
- 	transition: all .35s ease;
+ 	max-height: 1000px;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
  #adstad:checked ~ .adstad{
  	max-height: 500px;
- 	transition: all .35s ease;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
  #skra:checked ~ .skra{
  	max-height: 500px;
- 	transition: all .35s ease;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
  #motsm:checked ~ .motsm{
  	max-height: 500px;
- 	transition: all .35s ease;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
  #veitng:checked ~ .veitng{
  	max-height: 500px;
- 	transition: all .35s ease;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
  #contact:checked ~ .contact{
  	max-height: 500px;
- 	transition: all .35s ease;
+ 	padding-left: 2.5em;
+ 	padding-bottom: 2em;
+ 	line-height: 1.3em;
+ 	transition: all 1s ease;
  }
 
 /*================BANNER USAH============*/
